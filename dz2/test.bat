@@ -1,0 +1,1 @@
+g++ functions.cpp main.cpp -o example2.exe
