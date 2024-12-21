@@ -2,7 +2,7 @@
 
 #include "menu.hpp"
 
-namespace IBusko {
+namespace KIE {
     const MenuItem* show_menu(const MenuItem* current);
     const MenuItem* exit(const MenuItem* current);
 
@@ -14,5 +14,5 @@ namespace IBusko {
 	const MenuItem* study_datebase(const MenuItem* current);
     const MenuItem* study_multi_prog(const MenuItem* current);
     const MenuItem* study_net_tech(const MenuItem* current);
-    const MenuItem* study_go_back_other_tech(const MenuItem* current);
+    const MenuItem* study_go_back(const MenuItem* current);
 }

@@ -4,8 +4,8 @@
 
 #include <cstddef>
 
-// Главное меню
-const KIE::MenuItem KIE::STUDY_GO_BACK_OTHER_TECH = {
+// 3 уровень меню
+const KIE::MenuItem KIE::STUDY_GO_BACK= {
     "0 - Выйти в предыдущее менню", KIE::study_go_back_other_tech, &KIE::STUDY_OTHER_TECH
 };
 const KIE::MenuItem KIE::STUDY_DATEBASE = {
@@ -20,7 +20,7 @@ const KIE::MenuItem KIE::STUDY_NET_TECH = {
 
 namespace {
     const KIE::MenuItem* const oth_tech_children[] = {
-        &KIE::STUDY_GO_BACK_OTHER_TECH,
+        &KIE::STUDY_GO_BACK,
         &KIE::STUDY_DATEBASE,
         &KIE::STUDY_MULTI_PROG,
         &KIE::STUDY_NET_TECH,
@@ -28,7 +28,7 @@ namespace {
     const int study_oth_tech_size = sizeof(oth_tech_children) / sizeof(oth_tech_children[0]);
 }
 
-// Второй уровень меню
+// 2 уровень меню
 const KIE::MenuItem KIE::STUDY_GO_BACK = {
     "0 - Выйти в главное меню", KIE::study_go_back, &KIE::STUDY
 };

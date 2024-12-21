@@ -22,25 +22,19 @@ const KIE::MenuItem* KIE::exit(const MenuItem* current) {
     std::exit(0);
 }
 
-const KIE::MenuItem* KIE::study_summ(const MenuItem* current) {
+const KIE::MenuItem* KIE::study_prog_lang(const MenuItem* current) {
     // TODO
     std::cout << current->title << std::endl << std::endl;
     return current->parent;
 }
 
-const KIE::MenuItem* KIE::study_substract(const MenuItem* current) {
+const KIE::MenuItem* KIE::study_alg_struc(const MenuItem* current) {
     // TODO
     std::cout << current->title << std::endl << std::endl;
     return current->parent;
 }
 
-const KIE::MenuItem* KIE::study_multiply(const MenuItem* current) {
-    // TODO
-    std::cout << current->title << std::endl << std::endl;
-    return current->parent;
-}
-
-const KIE::MenuItem* KIE::study_divide(const MenuItem* current) {
+const KIE::MenuItem* KIE::study_other_tech(const MenuItem* current) {
     // TODO
     std::cout << current->title << std::endl << std::endl;
     return current->parent;
@@ -52,13 +46,13 @@ const KIE::MenuItem* KIE::study_go_back(const MenuItem* current) {
     return current->parent->parent;
 }
 // третий уровень
-const KIE::MenuItem* KIE::study_db(const MenuItem* current) {
+const KIE::MenuItem* KIE::study_datebase(const MenuItem* current) {
     // TODO
     std::cout << current->title << std::endl << std::endl;
     return current->parent;
 }
 
-const KIE::MenuItem* KIE::study_concurrent_prog(const MenuItem* current) {
+const KIE::MenuItem* KIE::study_multi_prog(const MenuItem* current) {
     // TODO
     std::cout << current->title << std::endl << std::endl;
     return current->parent;
@@ -70,7 +64,7 @@ const KIE::MenuItem* KIE::study_net_tech(const MenuItem* current) {
     return current->parent;
 }
 
-const KIE::MenuItem* KIE::study_go_back_other_tech(const MenuItem* current) {
+const KIE::MenuItem* KIE::study_go_back(const MenuItem* current) {
     // TODO
     std::cout << current->title << std::endl << std::endl;
     return current->parent->parent;

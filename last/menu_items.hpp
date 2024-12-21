@@ -13,8 +13,8 @@ namespace Djangoboyy {
     extern const MenuItem STUDY_ALG_STRUC;
     extern const MenuItem STUDY_OTHER_TECH;
 
-    extern const STUDY_GO_BACK_OTHER_TECH;
-    extern const STUDY_DATEBASE;
-    extern const STUDY_MULTI_PROG;
-    extern const STUDY_NET_TECH;
+    extern const MenuItem STUDY_GO_BACK;
+    extern const MenuItem STUDY_DATEBASE;
+    extern const MenuItem STUDY_MULTI_PROG;
+    extern const MenuItem STUDY_NET_TECH;
 }
