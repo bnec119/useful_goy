@@ -4,6 +4,7 @@
 
 namespace KIE {
     extern const MenuItem MAIN;
+	extern const MenuItem MENU_1;
 
     extern const MenuItem STUDY;
     extern const MenuItem EXIT;

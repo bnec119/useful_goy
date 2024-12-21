@@ -39,7 +39,7 @@ const KIE::MenuItem KIE::STUDY_ALG_STRUC = {
     "2 - Алгоритмы и структуры", KIE::study_alg_struc, &KIE::STUDY
 };
 const KIE::MenuItem KIE::STUDY_OTHER_TECH = {
-    "3 - Другие технологии", KIE::study_other_tech, &KIE::STUDY, oth_tech_children, study_oth_tech_size
+    "3 - Другие технологии", KIE::show_menu, &KIE::STUDY, oth_tech_children, study_oth_tech_size
 };
 
 namespace {
@@ -70,4 +70,7 @@ namespace {
 
 const KIE::MenuItem KIE::MAIN = {
     nullptr, KIE::show_menu, nullptr, main_children, main_size
+};
+const KIE::MenuItem KIE::MENU_1 = {
+    nullptr, KIE::show_menu, nullptr, study_children, study_size
 };
