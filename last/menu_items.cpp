@@ -5,8 +5,8 @@
 #include <cstddef>
 
 // 3 уровень меню
-const KIE::MenuItem KIE::STUDY_GO_BACK= {
-    "0 - Выйти в предыдущее менню", KIE::study_go_back_other_tech, &KIE::STUDY_OTHER_TECH
+const KIE::MenuItem KIE::STUDY_GO_BACK_OTHER_TECH = {
+   "0 - Выйти в предыдущее менню", KIE::study_go_back, &KIE::STUDY_OTHER_TECH
 };
 const KIE::MenuItem KIE::STUDY_DATEBASE = {
     "1 - Базы данных", KIE::study_datebase, &KIE::STUDY_OTHER_TECH
@@ -20,7 +20,7 @@ const KIE::MenuItem KIE::STUDY_NET_TECH = {
 
 namespace {
     const KIE::MenuItem* const oth_tech_children[] = {
-        &KIE::STUDY_GO_BACK,
+        &KIE::STUDY_GO_BACK_OTHER_TECH,
         &KIE::STUDY_DATEBASE,
         &KIE::STUDY_MULTI_PROG,
         &KIE::STUDY_NET_TECH,
@@ -29,8 +29,8 @@ namespace {
 }
 
 // 2 уровень меню
-const KIE::MenuItem KIE::STUDY_GO_BACK = {
-    "0 - Выйти в главное меню", KIE::study_go_back, &KIE::STUDY
+const KIE::MenuItem KIE::STUDY_GO_BACK= {
+   "0 - Выйти в предыдущее менню", KIE::study_go_back, &KIE::STUDY
 };
 const KIE::MenuItem KIE::STUDY_PROG_LANG = {
     "1 - Изучать языки программирования", KIE::study_prog_lang, &KIE::STUDY
@@ -52,7 +52,7 @@ namespace {
     const int study_size = sizeof(study_children) / sizeof(study_children[0]);
 }
 
-// Главное меню
+// главное меню
 const KIE::MenuItem KIE::STUDY = {
     "1 - Изучать программирование", KIE::show_menu, &KIE::MAIN, study_children, study_size
 };
